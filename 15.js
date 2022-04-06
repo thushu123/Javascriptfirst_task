@@ -1,27 +1,27 @@
 function validateform(){
-  let fn= document.myform.fname.value;
-  let sn= document.myform.sname.value;
+  let name= document.myform.name.value;
+  let fname= document.myform.fname.value;
   let mn= document.myform.mname.value;
   let mnob= document.myform.mno.value;
   let pd= document.myform.pwd.value;
   let cpd= document.myform.rpwd.value;
   var numbers = /^[0-9]+$/;
-  if((fn==" ")||(sn=="")||(mn==" ")||(mnob==" ")||(pd==" ")||(cpd==" "))
+  if((name==" ")||(fname=="")||(mn==" ")||(mnob==" ")||(pd==" ")||(cpd==" "))
   {
       alert("All fields must be filled out");
-      fname.focus();  
+      nameame.focus();  
               return false;  
   }
   //NAME VALIDATION
-  if((fn.length<3)||(fn.length>30))
+  if((name.length<3)||(name.length>30))
   {
   alert("Name should consists of minimum of 3 and max of 30 characters");
-  fname.focus(); 
+  nameame.focus(); 
   }
-  if((sn.length<3)||(sn.length>30))
+  if((fname.length<3)||(fname.length>30))
   {
   alert(" Father Name should consists of minimum of 3 and max of 30 characters");
-  sname.focus(); 
+  fnameame.focus(); 
   }
   if((mn.length<3)||(mn.length>30))
   {
